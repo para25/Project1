@@ -1,0 +1,189 @@
+.navbar-nav .nav-link {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffc107;
+    transition: color 0.3s ease;
+}
+
+.navbar {
+    background: linear-gradient(to right, #00bcd4, #03a9f4);
+}
+
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+
+.infos-block {
+    background: #b76c6e;
+}
+
+#infos .titles_boxs {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#infos {
+    position: relative;
+}
+
+#infos .right_shp {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 200px;
+}
+
+#infos ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+}
+
+#infos ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+#infos ul a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#infos ul li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -13px;
+    color: gold;
+    font-weight: bolder;
+    /* Set the color of the vertical bar */
+}
+
+.img-container {
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.img-container .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contribution {
+    background-color: #E5AF5C;
+    color: #75512E;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.pricing-card {
+    background-color: #E9DCC9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin-right: 20px;
+    /* Add margin to the right for space between panels */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    /* Enlarge the panel on hover */
+}
+
+.pricing-card:last-child {
+    margin-right: 0;
+    /* Remove margin from the last pricing card */
+}
+
+.pricing-card h2 {
+    color: #333;
+}
+
+.pricing-card p {
+    color: #666;
+}
+
+.pricing-card img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.pricing-card:hover img {
+    transform: scale(1.2);
+    /* Enlarge image on hover */
+}
+
+.pricing-card button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.pricing-card button:hover {
+    background-color: #2980b9;
+}
+
+.event-table {
+    border-collapse: collapse;
+    width: 100%;
+    /* font-weight: bolder; */
+    font-size: larger;
+    color: #f0f0f0;
+}
+
+.event-table th,
+.event-table td {
+    border: 1px solid #E5AF5C;
+    text-align: left;
+    padding: 8px;
+}
+
+.event-table th {
+    background-color: #E5AF5C;
+}
